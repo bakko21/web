@@ -9,7 +9,7 @@ body{
     display:flex;
     flex-direction:column;
     background-color: #1F2937;
-    padding:0 200px;
+    padding:0 150px;
     /* flex-wrap: wrap; 
     width:100%;
     height: 250px;
@@ -26,15 +26,19 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex:1;
+    
 
 
 
 }
+
 img{
-    flex-shrink: 0;
+    
     border-radius:10px;
     
 }
+
 .header-logo{
     font-size: 24px;
     color: #f9faf8;
@@ -51,14 +55,20 @@ img{
 .secondary-hero-text{
     font-size:18px;
     color:#E5E7EB;
+    flex:1;
+    max-width: 500px;
 }
 button{
     background-color: #3882f6 ;
     color:white;
-    border:0;
     border-radius:8px;
     padding:5px 15px;
     cursor: pointer;
+    margin-top: 10px;
+}
+.lower-header-cont button
+{
+    border:none;
 }
 
 
@@ -102,17 +112,67 @@ a{
     height:250px;
     align-items: center;
     justify-content: center;
+    padding:50px;
 }
 .verse{
     font-size:36px;
     color:#1F2937;
     font-weight: 300;
-
+    
     
     
 }
 .author{
-    margin:50px 0 0 1000px;
+    margin-top: 5px;
     font-weight: 500;
     font-size: 20px;
+    align-self: flex-end;
+
+}
+.upper-footer{
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    margin-top:60px;
+    margin-bottom: 60px;
+    
+}
+.cta{
+    
+    background-color: #3882f6;
+    border-radius: 15px;
+    width: 800px;
+    height: 100px;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+
+    
+
+}
+.left-cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100px;
+}
+.upper-cta{
+    font-weight: bold;
+    font-size:20px;
+}
+.lower-cta{
+    font-size: 13px;
+}
+.cta button{
+    align-self: center;
+    border-color:white;
+}
+
+.lower-footer{
+    height: 50px;
+    background-color: #1F2937;
+    color:white;
+    text-align: center;
+    padding-top: 30px;
 }
